@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computo en la Nube</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #2d3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        .content {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .more-info {
+            display: none;
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Introducción al Cómputo en la Nube</h1>
+</header>
+
+<section>
+    <div class="content">
+        <p>El cómputo en la nube se refiere a la entrega de servicios informáticos a través de Internet, lo que permite a las empresas y usuarios acceder a recursos como almacenamiento, bases de datos, servidores y software sin necesidad de tener infraestructura física propia. Esta tecnología ofrece ventajas como escalabilidad, ahorro de costos y acceso remoto a servicios, lo que la hace una solución atractiva tanto para pequeñas empresas como para grandes corporaciones.</p>
+
+        <button onclick="showMoreInfo()">Más información</button>
+        <div class="more-info" id="moreInfo">
+            <p>El cómputo en la nube puede clasificarse en tres modelos principales: la nube pública, donde los recursos son proporcionados por un tercero; la nube privada, dedicada exclusivamente a una organización; y la nube híbrida, que combina ambos enfoques. Esta flexibilidad y la capacidad de ajustar los recursos según las necesidades específicas han convertido al cómputo en la nube en una herramienta clave en la transformación digital de muchas industrias.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    function showMoreInfo() {
+        var moreInfo = document.getElementById("moreInfo");
+        if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
+            moreInfo.style.display = "block";
+        } else {
+            moreInfo.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
